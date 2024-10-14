@@ -10,7 +10,12 @@ bool result;
 // TODO: The Parse method attempts to parse a string to a number and
 // throws an exception if the parse is unsuccessful
 foreach (string str in NumStrs) {
-
+    try{
+        testfloat=float.Parse(str);
+        Console.WriteLine($"Parsed number is {testfloat}");
+        testint=int.parse(str);
+        Console.WriteLine($"Parsed number is {testint}");
+    }
 }
 
 // TODO: The TryParse method returns 'true' if the parse is successful
